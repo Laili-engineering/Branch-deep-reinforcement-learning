@@ -229,7 +229,7 @@ def reward(component_state, actions, state_number, Total_CO2, mobility):
     CO2_normalization = - (Total_CO2 - 3.1e3 * 365) / (6.2e3 * 365 - 3.1e3 * 365)
 
     # note the negative
-    normalized_Reward = 0.5 * normalized_fee + 0.25 * CO2_normalization + 0.25 * (mobility - 1)
+    normalized_Reward = 0.7 * normalized_fee + 0.15 * CO2_normalization + 0.15 * (mobility - 1)
 
     return normalized_Reward, normalized_Reward_maintenance
 
